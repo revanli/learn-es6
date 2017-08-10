@@ -107,9 +107,6 @@ export default {
               //     E4: { v: '???' } }
               .reduce((prev, next) => Object.assign({}, prev, {[next.position]: {v: next.v}}), {});
     var output = Object.assign({}, headers, data);
-    // 合并 headers 和 data
-    var output = Object.assign({}, headers, data);
-    var outputPos = Object.keys(output);
     console.log('output', output)
   },
   methods: {
